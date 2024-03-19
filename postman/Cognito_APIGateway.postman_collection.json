@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "d0753542-983f-47fa-b5ec-e50ec65907dd",
+		"name": "Cognito_APIGateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1771101"
+	},
+	"item": [
+		{
+			"name": "getUserByCPF",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "clientSecret",
+							"value": "nt8cm09g46jbeftsq60ekd7i5gle0mq01r9j8k69er0dk0dtjk9",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "4ra3p0j285l2pf93i7kj4fn75c",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://identity-server-fiap.auth.sa-east-1.amazoncognito.com/oauth2/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://identity-server-fiap.auth.sa-east-1.amazoncognito.com/oauth2/authorize",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cfs1vs7yfh.execute-api.sa-east-1.amazonaws.com/default/getUserByCPF/83378482001",
+					"protocol": "https",
+					"host": [
+						"cfs1vs7yfh",
+						"execute-api",
+						"sa-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"default",
+						"getUserByCPF",
+						"83378482001"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
