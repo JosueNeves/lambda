@@ -6,15 +6,6 @@ export const handler = async (event) => {
     let cpf = event.pathParameters.id;
     
     if (isValidCPF(cpf)){
-
-      //const res = await fetch('https://jsonplaceholder.typicode.com/todos/1');
-      //return {
-      //  statusCode: 200,
-      //  headers: {
-      //    'Content-Type': 'application/json'
-      //  },
-      //  body: res.json()
-      //};
       
       return {
         statusCode: 200,
